@@ -1,0 +1,3 @@
+@public
+def hello() -> bytes32:
+    return "Hello, World!"

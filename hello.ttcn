@@ -1,0 +1,5 @@
+module hello {
+    function main() runs on system {
+        log("Hello, World!");
+    }
+}

@@ -1,0 +1,3 @@
+{
+  \markup "Hello, World!"
+}

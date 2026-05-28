@@ -1,0 +1,4 @@
+node hello () returns ();
+let
+    hello = "Hello, World!";
+tel

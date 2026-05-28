@@ -1,0 +1,8 @@
+events {}
+http {
+    server {
+        location / {
+            return 200 "Hello, World!";
+        }
+    }
+}

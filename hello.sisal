@@ -1,0 +1,5 @@
+define main
+
+function main(returns string)
+  "Hello, World!"
+end function

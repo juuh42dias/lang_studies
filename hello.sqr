@@ -1,0 +1,3 @@
+begin-program
+    print 'Hello, World!' ( +1, 1)
+end-program
