@@ -1,0 +1,11 @@
+PROC fib (VAL INT n, INT result)
+    IF
+        n <= 1
+            result := n
+        TRUE
+            INT a, b:
+            SEQ
+                fib (n-1, a)
+                fib (n-2, b)
+                result := a + b
+:

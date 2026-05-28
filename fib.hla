@@ -1,0 +1,31 @@
+program fib;
+#include("stdlib.hhf")
+
+procedure fib(n: int32); @returns("eax");
+begin fib;
+    cmp(n, 1);
+    jle base;
+    mov(n, ebx);
+    dec(ebx);
+    push(ebx);
+    call fib;
+    push(eax);
+    mov(n, ebx);
+    sub(2, ebx);
+    push(ebx);
+    call fib;
+    pop(ebx);
+    add(ebx, eax);
+    jmp done;
+base:
+    mov(n, eax);
+done:
+    ret;
+end fib;
+
+begin fib;
+    push(10);
+    call fib;
+    stdout.puti32(eax);
+    stdout.newln();
+end fib;

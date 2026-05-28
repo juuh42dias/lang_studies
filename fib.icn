@@ -1,0 +1,8 @@
+procedure fib(n)
+    if n <= 1 then return n
+    return fib(n-1) + fib(n-2)
+end
+
+procedure main()
+    write(fib(10))
+end

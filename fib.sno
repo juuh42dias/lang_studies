@@ -1,0 +1,6 @@
+        define('fib(n)') :(fib_end)
+fib     fib = n <= 1 n :s(return)
+        fib = fib(n - 1) + fib(n - 2) :(return)
+fib_end
+        output = fib(10)
+end

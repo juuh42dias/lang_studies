@@ -1,0 +1,10 @@
+function int fib (int n) {
+    if n <= 1 {
+        return n;
+    } else {
+        return fib(n-1) + fib(n-2);
+    }
+}
+
+var int r = call fib(10);
+_printf("%d\n", r);

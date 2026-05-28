@@ -1,0 +1,10 @@
+PROC FIB(IN N, OUT RES);
+BEGIN
+    IF N <= 1 THEN
+        RES = N;
+    ELSE
+        FIB(N-1, RES1);
+        FIB(N-2, RES2);
+        RES = RES1 + RES2;
+    END
+END

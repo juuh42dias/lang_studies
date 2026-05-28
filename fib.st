@@ -1,0 +1,8 @@
+| fib |
+fib := nil.
+fib := [ :n |
+    n <= 1
+        ifTrue: [ n ]
+        ifFalse: [ (fib value: n - 1) + (fib value: n - 2) ]
+].
+(fib value: 10) printNl

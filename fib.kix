@@ -1,0 +1,9 @@
+Function fib($n)
+    If $n <= 1
+        $fib = $n
+    Else
+        $fib = fib($n-1) + fib($n-2)
+    EndIf
+EndFunction
+
+? fib(10)

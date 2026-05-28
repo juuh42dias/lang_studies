@@ -1,0 +1,11 @@
+proc fcmp outlib=work.funcs.fib;
+  function fib(n);
+    if n <= 1 then return(n);
+    else return(fib(n-1) + fib(n-2));
+  endsub;
+run;
+options cmplib=work.funcs;
+data _null_;
+  result = fib(10);
+  put result;
+run;

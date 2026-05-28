@@ -1,0 +1,10 @@
+PROCEDURE Fib@1000000000(n: Integer): Integer;
+BEGIN
+  IF n <= 1 THEN
+    EXIT(n)
+  ELSE
+    EXIT(Fib(n - 1) + Fib(n - 2))
+  END;
+END;
+
+MESSAGE(FORMAT(Fib(10)));

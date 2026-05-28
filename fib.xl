@@ -1,0 +1,4 @@
+function Fib N return
+    if N <= 1 then N else Fib(N-1) + Fib(N-2)
+
+Fib(10)

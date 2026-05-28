@@ -1,0 +1,10 @@
+/fib {
+    dup 1 le
+    { pop }
+    {
+        dup 1 sub fib
+        exch 2 sub fib
+        add
+    } ifelse
+} def
+10 fib ==

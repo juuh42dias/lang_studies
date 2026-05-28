@@ -1,0 +1,19 @@
+class
+    FIB
+create
+    make
+feature
+    fib(n: INTEGER): INTEGER
+        do
+            if n <= 1 then
+                Result := n
+            else
+                Result := fib(n - 1) + fib(n - 2)
+            end
+        end
+    make
+        do
+            print(fib(10).out)
+            print("%N")
+        end
+end

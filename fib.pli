@@ -1,0 +1,5 @@
+fib: procedure(n) returns(fixed);
+    declare n fixed;
+    if n <= 1 then return n;
+    return fib(n-1) + fib(n-2);
+end fib;

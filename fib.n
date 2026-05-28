@@ -1,0 +1,5 @@
+def fib(n) {
+    when (n <= 1) return n;
+    fib(n-1) + fib(n-2)
+}
+System.Console.WriteLine(fib(10));

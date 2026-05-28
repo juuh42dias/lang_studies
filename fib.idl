@@ -1,0 +1,7 @@
+function fib, n
+    if n le 1 then return, n
+    return, fib(n-1) + fib(n-2)
+end
+
+print, fib(10)
+end

@@ -1,0 +1,5 @@
+component fib
+    export Executable
+    fib(n: ZZ32): ZZ32 = if n <= 1 then n else fib(n-1) + fib(n-2)
+    run() = println(fib(10))
+end

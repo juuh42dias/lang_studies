@@ -1,0 +1,9 @@
+:- module fib.
+:- interface.
+:- import_module io.
+:- pred main(io::di, io::uo) is det.
+:- implementation.
+:- import_module int.
+:- func fib(int) = int.
+fib(N) = (if N <= 1 then N else fib(N-1) + fib(N-2)).
+main(!IO) :- write_int(fib(10), !IO), nl(!IO).

@@ -1,0 +1,5 @@
+to fib :n
+    if :n <= 1 [output :n]
+    output (fib :n-1) + (fib :n-2)
+end
+print fib 10

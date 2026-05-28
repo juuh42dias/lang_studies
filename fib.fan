@@ -1,0 +1,10 @@
+class Fib {
+    static Int fib(Int n) {
+        if (n <= 1) return n
+        return fib(n-1) + fib(n-2)
+    }
+
+    static Void main() {
+        echo(fib(10))
+    }
+}

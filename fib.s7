@@ -1,0 +1,17 @@
+$ include "seed7_05.s7i";
+
+const func integer: fib (in integer: n) is func
+  result
+    var integer: result is 0;
+  begin
+    if n <= 1 then
+      result := n;
+    else
+      result := fib(n-1) + fib(n-2);
+    end if;
+  end func;
+
+const proc: main is func
+  begin
+    writeln(fib(10));
+  end func;

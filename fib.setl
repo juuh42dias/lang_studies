@@ -1,0 +1,10 @@
+program fib;
+    proc fib(n);
+        if n <= 1 then
+            return n;
+        else
+            return fib(n-1) + fib(n-2);
+        end if;
+    end proc;
+    print(fib(10));
+end program;

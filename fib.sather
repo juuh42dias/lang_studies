@@ -1,0 +1,9 @@
+class MAIN is
+  fib(n:INT):INT is
+    if n <= 1 then return n; end;
+    return fib(n-1) + fib(n-2);
+  end;
+  main is
+    #OUT + fib(10) + "\n";
+  end;
+end;

@@ -1,0 +1,18 @@
+**free
+ctl-opt main(main);
+
+dcl-proc fib;
+  dcl-pi *n int(10);
+    n int(10) value;
+  end-pi;
+  if n <= 1;
+    return n;
+  endif;
+  return fib(n-1) + fib(n-2);
+end-proc;
+
+dcl-proc main;
+  dcl-s result int(10);
+  result = fib(10);
+  dsply result;
+end-proc;

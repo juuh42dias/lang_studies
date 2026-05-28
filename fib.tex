@@ -1,0 +1,12 @@
+\newcount\tmpa \newcount\tmpb
+\def\fib#1{%
+    \ifnum#1<2 \the#1\relax\else
+        \tmpa=\numexpr#1-1\relax
+        \edef\fibA{\expandafter\noexpand\fib\expandafter{\the\tmpa}}%
+        \tmpb=\numexpr#1-2\relax
+        \edef\fibB{\expandafter\noexpand\fib\expandafter{\the\tmpb}}%
+        \number\numexpr\fibA+\fibB\relax
+    \fi
+}
+\fib{10}
+\bye

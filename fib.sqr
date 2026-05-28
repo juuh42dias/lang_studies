@@ -1,0 +1,15 @@
+begin-program
+    do fib(10, #result)
+    show #result
+end-program
+
+begin-procedure fib(#n, #result)
+    if #n <= 1
+        let #result = #n
+    else
+        do fib(#n-1, #result)
+        let #temp1 = #result
+        do fib(#n-2, #result)
+        let #result = #temp1 + #result
+    end-if
+end-procedure

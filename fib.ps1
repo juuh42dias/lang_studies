@@ -1,0 +1,5 @@
+function fib($n) {
+    if ($n -le 1) { $n }
+    else { (fib ($n-1)) + (fib ($n-2)) }
+}
+echo (fib 10)
